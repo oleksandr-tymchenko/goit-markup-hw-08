@@ -1,0 +1,23 @@
+.benefits-list {
+    // display: flex;
+    // flex-wrap: wrap;
+    margin: -15px;
+
+
+    line-height: 1.7;
+}
+
+.benefits__icons {
+    background-color: var(--background-add);
+    border-radius: 4px;
+
+    height: 120px;
+    margin-bottom: 20px;
+
+    @extend %centering;
+}
+
+.benefits__item {
+    width: 100%;
+    margin: 15px;
+}

@@ -1,0 +1,256 @@
+/* Колір основного тексту #757575 */
+/* Додатковий колір #212121 */
+/* Білий (Хедер) #FFFFFF */
+/* Чорний #000000 */
+/* Сірий фон #2F303A; */
+/* Акцент #2196F3 */
+/* Фон додатковий #F5F4FA; */
+ :root {
+  --brand-color: #757575;
+  --second-color: #212121;
+  --main-background: #ffffff;
+  --background-head: #2f303a;
+  --background-add: #f5f4fa;
+  --accent-color: #2196f3;
+  --head-logo: #000000;
+  --border-color: #eeeeee;
+  --line-header: #ececec;
+  --soc-link: #afb1b8;
+}
+body {
+  margin: 0;
+  background-color: var(--main-background);
+  color: var(--brand-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+/* -----Utilit classes---- */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}  */
+img {
+  display: block;
+} */
+.title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  border-radius: 4px;
+  border: none;
+
+  display: inline-block;
+
+  font-family: inherit;
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: var(--main-background);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88; 
+  
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button-icon {
+  fill: currentColor;
+}
+
+/*-------outline и beckground убрать--------*/
+
+
+
+/* -----------------header ----------*/
+.page-header {
+  border-bottom: 1px solid var(--line-header);
+}
+
+
+/* // .page-header__cont,
+// .page-header__nav,
+// .auth-nav,
+// .cont-link {
+//     display: flex;
+//     align-items: center;
+// } */
+
+.page-header__cont {
+  height: 80px;
+}
+
+
+/* // .site-nav {
+//     display: flex;
+// } */
+
+.site-nav__link {
+  position: relative;
+
+  display: block;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--second-color);
+
+  @include font(500, null, 1.14, 00.02em);
+  @extend %mainAnime;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link:active {
+  color: var(--accent-color);
+}
+
+.site-nav__link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .site-nav__item+.site-nav__item {
+  margin-left: 50px;
+}
+
+
+.site-nav__link.current::after {
+  content: '';
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.auth-nav {
+  margin-left: auto;
+  justify-content: center;
+
+  gap: 10;
+}
+
+.auth-nav .auth-nav__item+.auth-nav__item {
+  margin-left: 30px;
+}
+
+.cont-link__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.cont-link {
+  color: var(--brand-color);
+  @extend %mainAnime;
+}
+
+.cont-link:hover,
+.contakts .cont-link:focus {
+  color: var(--accent-color);
+}
+
+
+
+/* -----------hero-------------- */
+
+
+
+
+
+
+
+/* ---------------MAIN--------------------- */
+
+/* section bacgr убр*/
+
+
+
+/* ---------benefits---------- */
+
+
+
+
+
+
+/* -------------work-------------- */
+
+
+
+/* ------------team--------------- */
+
+
+/* --------Employee------------- */
+
+
+/* ----------soc-lincs----------- */
+
+
+
+
+
+
+/* ----------Clients-------------- */
+
+
+/*-------------------- footer------------ */
+
+
+
+/* ------foot-form-------- */
+
+
+
+
+
+/* --------portfolio------------- */
+
+
+
+/* -----------------MODAL--------------------- */
+
+

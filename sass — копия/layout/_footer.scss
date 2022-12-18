@@ -1,0 +1,55 @@
+.foot {
+    background-color: var(--background-head);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+// .foot-cont {
+//     display: flex;
+// }
+
+.adresses {
+    width: 231px;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.adressess__link {
+    color: var(--main-background);
+
+    @extend %mainAnime;
+
+    &:hover,
+    &:focus {
+         color: var(--accent-color);
+    }
+}
+
+
+
+.adresses__cont-link {
+    display: block;
+    margin-top: 9px;
+
+    color: var(--brand-color);
+    @extend %mainAnime;
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+
+/* -------offer to join---------- */
+.offer-to-join {
+    margin-left: 70px;
+}
+
+/* ----------call to action----------- */
+.call-to-action {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: var(--main-background);
+}

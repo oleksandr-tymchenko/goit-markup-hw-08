@@ -1,0 +1,82 @@
+
+.button-icon {
+    fill: currentColor;
+}
+.hero__button {
+    min-width: 216px;
+    padding: 10px 30px;
+    @extend %button;
+}
+
+.foot__button {
+    
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    min-width: 200px;
+    padding: 10px 28px;
+    margin-left: 12px;
+    @extend %button;
+
+}
+
+.filter__button {
+    text-align: center;
+    padding: 6px 22px;
+    
+    min-width: 43px;
+    border: 1px solid transparent;
+
+    color: var(--second-color);
+    background-color: var(--background-add);
+
+    @include font(500, 16, 1.6, null);
+    @extend %mainAnime;
+    @extend %button;
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+            color: var(--main-background);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+.button--submit {
+    display: block;
+
+    width: 200px;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @extend %button;
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @extend %centering; 
+
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: var(--head-logo);
+    background-color: var(--main-background);
+
+    
+    @extend %mainAnime;
+    transition-property: fill;
+    cursor: pointer;
+
+    &:hover {
+            fill: var(--accent-color);
+        }
+}
+
+
