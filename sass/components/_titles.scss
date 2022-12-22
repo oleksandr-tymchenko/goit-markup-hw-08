@@ -18,14 +18,20 @@
 }
 .section-title {
     margin-bottom: 50px;
-
     color: var(--second-color);
 
-    @include font(null, 36, 1.17, null);
-
+    @include font(null, 36, 1.17, null); 
     text-align: center;
+
+    @media screen and (max-width: 1199px) {
+    @include font(null, 28, 1.17, null);
+    margin-bottom: 30px;
+    }
 }
 .benefits__title {
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
     color: var(--second-color);
 }
 .product-card__title {

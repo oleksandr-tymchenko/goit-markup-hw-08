@@ -1,12 +1,11 @@
+
 .works {
-    // display: flex;
-    // flex-wrap: wrap;
-    margin: -15px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.works__item {
-    margin: 15px;
-}
 
 .works__thumb {
     position: relative;

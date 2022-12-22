@@ -1,13 +1,13 @@
-.team {
+.section__team {
     background-color: var(--background-add);
 }
 
 .team__list {
-    // display: flex;
-    // flex-wrap: wrap;
-    /* -----возм нужно заменить на align-items----- */
+    display: flex;
+    flex-wrap: wrap;
+   
     text-align: center;
-    margin: -15px;
-
+    // margin: -15px;
+    gap: 15px;
     @include font(null, 16, 1.2, null);
 }
