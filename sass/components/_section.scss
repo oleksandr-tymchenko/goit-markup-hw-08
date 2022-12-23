@@ -10,6 +10,7 @@
 }
 
 .section--no-padding-top {
+    width: 100%;
     padding-top: 0;
     @media screen and (max-width: 1199px) {
             display: none;

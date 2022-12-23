@@ -1,4 +1,5 @@
 .foot {
+    // width: 100%;
     background-color: var(--background-head);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -7,7 +8,18 @@
 
 .foot-cont {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+
+    // gap: 60px;
+}
+.foot-adress {
+    text-align: center;
+    margin-bottom: 60px;
+    // display: flex;
+
+    // flex-wrap: wrap;
+    // justify-content: center;
 }
 
 .adresses {
@@ -45,12 +57,29 @@
 
 /* -------offer to join---------- */
 .offer-to-join {
-    margin-left: 70px;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 12px;
+        margin-left: 165px;
+    }
+    
+    // @media screen and (min-width: 1200px) {
+    // display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    //     // @extend %centering;
+    //     margin-left: 70px;
+    // }
+    
 }
 
 /* ----------call to action----------- */
 .call-to-action {
-    margin-top: 12px;
     margin-bottom: 20px;
+    // margin-top: 12px;
+    // margin-bottom: 20px;
     color: var(--main-background);
 }
