@@ -21,6 +21,11 @@
     margin-right: auto;
     @extend %button;
 
+    @include desktop {
+        margin-left: 12px;
+        margin-top: 0px;
+    }
+
 }
 
 .filter__button {

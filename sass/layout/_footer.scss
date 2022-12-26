@@ -1,5 +1,4 @@
 .foot {
-    // width: 100%;
     background-color: var(--background-head);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -14,18 +13,28 @@
     // gap: 60px;
 }
 .foot-adress {
+    width: 100%;
+    
     text-align: center;
     margin-bottom: 60px;
-    // display: flex;
+    
+    @include tab {
+        width: auto;
+    }
 
-    // flex-wrap: wrap;
-    // justify-content: center;
+    @include desktop {
+    text-align: start;
+    }
+    
 }
 
 .adresses {
+    margin-left: auto;
+    margin-right: auto;
     width: 231px;
     font-style: normal;
     line-height: 1.7;
+
 }
 
 .adressess__link {
@@ -61,18 +70,19 @@
     text-align: center;
     margin-bottom: 60px;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 12px;
-        margin-left: 165px;
+    @include tab {
+    padding-top: 12px;
+    margin-left: 165px;
+    }
+
+    @include desktop {
+        // display: flex;
+        //         flex-wrap: wrap;
+        //         justify-content: center;
+        //         // @extend %centering;
+                margin-left: 70px;
     }
     
-    // @media screen and (min-width: 1200px) {
-    // display: flex;
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     // @extend %centering;
-    //     margin-left: 70px;
-    // }
     
 }
 
@@ -82,4 +92,8 @@
     // margin-top: 12px;
     // margin-bottom: 20px;
     color: var(--main-background);
+
+    @include desktop {
+        text-align: start;
+    }
 }

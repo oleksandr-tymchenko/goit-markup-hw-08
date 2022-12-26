@@ -186,6 +186,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 1200px) {
+  .foot__button {
+    margin-left: 12px;
+    margin-top: 0px;
+  }
+}
 
 .filter__button {
   text-align: center;
@@ -302,10 +308,16 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 450px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .employee {
-    width: 450px;
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .employee {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -359,8 +371,29 @@ img {
 }
 
 .foot__form-cont {
+  width: 100%;
   gap: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .foot__form-cont {
+    width: auto;
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foot-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .foot-form__lable {
@@ -382,6 +415,12 @@ img {
 @media screen and (min-width: 768px) {
   .foot-form__input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-form__input {
+    width: 358px;
+    padding-left: 60px;
   }
 }
 
@@ -570,7 +609,7 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  gap: 15px;
+  gap: 30px;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -630,11 +669,24 @@ img {
 }
 
 .foot-adress {
+  width: 100%;
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .foot-adress {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-adress {
+    text-align: start;
+  }
+}
 
 .adresses {
+  margin-left: auto;
+  margin-right: auto;
   width: 231px;
   font-style: normal;
   line-height: 1.7;
@@ -668,11 +720,21 @@ img {
     margin-left: 165px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .offer-to-join {
+    margin-left: 70px;
+  }
+}
 
 /* ----------call to action----------- */
 .call-to-action {
   margin-bottom: 20px;
   color: var(--main-background);
+}
+@media screen and (min-width: 1200px) {
+  .call-to-action {
+    text-align: start;
+  }
 }
 
 .filter {

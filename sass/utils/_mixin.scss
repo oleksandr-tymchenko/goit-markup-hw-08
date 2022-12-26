@@ -4,3 +4,19 @@
         line-height: $lh;
         letter-spacing: $ls;
 }
+
+@mixin mob {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+@mixin tab {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
