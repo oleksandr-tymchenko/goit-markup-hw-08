@@ -146,7 +146,11 @@
           <ul class="works list">
             <li class="works__item">
               <div class="works__thumb">
-                <img srcset="./images/works/img(1).jpg 1x, ./images/works/img(1)2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/works/img(1).jpg   1x,
+                    ./images/works/img(1)2x.jpg 2x
+                  "
                   src="./images/works/img(1).jpg"
                   alt="Людина печатає на клавіатурі"
                   width="370"
@@ -157,7 +161,11 @@
 
             <li class="works__item">
               <div class="works__thumb">
-                <img srcset="./images/works/img(2).jpg 1x, ./images/works/img(2)2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/works/img(2).jpg   1x,
+                    ./images/works/img(2)2x.jpg 2x
+                  "
                   src="./images/works/img(2).jpg"
                   alt="Людина працює з ноутбуком та телефоном"
                   width="370"
@@ -167,7 +175,11 @@
             </li>
             <li class="works__item">
               <div class="works__thumb">
-                <img srcset="./images/works/img(3).jpg 1x, ./images/works/img(3)2x.jpg 2x"
+                <img
+                  srcset="
+                    ./images/works/img(3).jpg   1x,
+                    ./images/works/img(3)2x.jpg 2x
+                  "
                   src="./images/works/img(3).jpg"
                   alt="Людина працює з планшетом"
                   width="370"
@@ -186,14 +198,36 @@
 
           <ul class="team__list list">
             <li class="employee">
-              div.thumd
-              <img srcset="./images/team/img_igor.jpg 1x, ./images/team/img_igor2x.jpg 2x"
-                src="./images/team/img_igor.jpg"
-                alt="Фото співробітника"
-                width="100%"
-                class="employee__img"
-          
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img_igor.jpg 1x,
+                    ./images/team/img_igor2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/img_igor.jpg 1x,
+                    ./images/team/tablet/img_igor2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob/img_igor.jpg 1x,
+                    ./images/team/mob/img_igor2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/team/img_igor.jpg"
+                  alt="Фото співробітника"
+                  width="100%"
+                />
+              </picture>
+
               <p class="employee__name">Ігор Дем'яненко</p>
               <p class="employee__poz">Product Designer</p>
               <ul class="soc-links list">
@@ -225,12 +259,35 @@
               </ul>
             </li>
             <li class="employee">
-              <img srcset="./images/team/img_olga.jpg 1x, ./images/team/img_olga2x.jpg 2x"
-                src="./images/team/img_olga.jpg"
-                alt="Фото співробітника"
-                width="100%"
-                class="employee__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img_olga.jpg 1x,
+                    ./images/team/img_olga2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/img_olga.jpg 1x,
+                    ./images/team/tablet/img_olga2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob/img_olga.jpg 1x,
+                    ./images/team/mob/img_olga2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/team/img_olga.jpg"
+                  alt="Фото співробітника"
+                  width="100%"
+                />
+              </picture>
               <p class="employee__name">Ольга Рєпіна</p>
               <p class="employee__poz">Frontend Developer</p>
               <ul class="soc-links list">
@@ -262,12 +319,36 @@
               </ul>
             </li>
             <li class="employee">
-              <img srcset="./images/team/img_mykola.jpg 1x, ./images/team/img_mykola2x.jpg 2x"
-                src="./images/team/img_mykola.jpg"
-                alt="Фото співробітника"
-                width="100%"
-                class="employee__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img_mykola.jpg 1x,
+                    ./images/team/img_mykola2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/img_mykola.jpg 1x,
+                    ./images/team/tablet/img_mykola2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob/img_mykola.jpg 1x,
+                    ./images/team/mob/img_mykola2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/team/img_mykola.jpg"
+                  alt="Фото співробітника"
+                  width="100%"
+                />
+              </picture>
+
               <p class="employee__name">Микола Тарасов</p>
               <p class="employee__poz">Marketing</p>
               <ul class="soc-links list">
@@ -299,12 +380,36 @@
               </ul>
             </li>
             <li class="employee">
-              <img srcset="./images/team/img_mikhajlo.jpg 1x, ./images/team/img_mikhajlo2x.jpg 2x"
-                src="./images/team/img_mikhajlo.jpg"
-                alt="Фото співробітника"
-                width="100%"
-                class="employee__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img_mikhajlo.jpg 1x,
+                    ./images/team/img_mikhajlo2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/img_mikhajlo.jpg 1x,
+                    ./images/team/tablet/img_mikhajlo2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mob/img_mikhajlo.jpg 1x,
+                    ./images/team/mob/img_mikhajlo2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img
+                  src="./images/team/img_mikhajlo.jpg"
+                  alt="Фото співробітника"
+                  width="100%"
+                />
+              </picture>
+
               <p class="employee__name">Михайло Єрмаков</p>
               <p class="employee__poz">UI Designer</p>
               <ul class="soc-links list">

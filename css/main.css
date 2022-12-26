@@ -303,7 +303,7 @@ img {
 }
 
 .employee {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   background-color: var(--main-background);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -318,6 +318,7 @@ img {
 @media screen and (min-width: 1200px) {
   .employee {
     width: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
   }
 }
 
