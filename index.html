@@ -27,7 +27,7 @@
   <body>
     <!--шапка-->
 
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__cont">
         <a href="" class="logo link"
           ><span class="logo--accent">Web</span>Studio</a
@@ -67,18 +67,84 @@
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            class="menu-button__icon"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="menu-button__icon-menu"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+            <!-- <use
+              class="menu-button__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use> -->
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- Mobail menu -->
+
+      <div class="mobile-menu">
+        <button type="button" class="menu-button-close">
+          <svg width="40" height="40" class="menu-button__icon">
+            <use
+              class="menu-button__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use>
+          </svg>
+        </button>
+        <nav class="mobile-page-header__nav">
+          <ul class="mobile-site-nav list">
+            <li class="mobile-site-nav__item">
+              <a href="./index.html" class="mobile-site-nav__link current link"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-site-nav__item">
+              <a href="./portfolio.html" class="mobile-site-nav__link link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-site-nav__item">
+              <a href="" class="mobile-site-nav__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-auth-nav list">
+          <li class="mobile-auth-nav__item">
+            <a href="tel:+380961111111" class="mobile-num-link link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="mobile-email-link link">
+              
+              info@devstudio.com
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </header>
 
     <main>
       <!---------- Блок герой ------------>
 
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open type="button" class="hero__button">
           Замовити послугу
         </button>
-      </section> -->
+      </section>
 
       <!-----"Переваги" (заголовок прибираэмо) ----->
 
@@ -201,21 +267,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/img_igor.jpg 1x,
+                    ./images/team/img_igor.jpg   1x,
                     ./images/team/img_igor2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/img_igor.jpg 1x,
+                    ./images/team/tablet/img_igor.jpg   1x,
                     ./images/team/tablet/img_igor2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mob/img_igor.jpg 1x,
+                    ./images/team/mob/img_igor.jpg   1x,
                     ./images/team/mob/img_igor2x.jpg 2x
                   "
                   media="(min-width: 480px)"
@@ -262,21 +328,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/img_olga.jpg 1x,
+                    ./images/team/img_olga.jpg   1x,
                     ./images/team/img_olga2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/img_olga.jpg 1x,
+                    ./images/team/tablet/img_olga.jpg   1x,
                     ./images/team/tablet/img_olga2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mob/img_olga.jpg 1x,
+                    ./images/team/mob/img_olga.jpg   1x,
                     ./images/team/mob/img_olga2x.jpg 2x
                   "
                   media="(min-width: 480px)"
@@ -322,21 +388,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/img_mykola.jpg 1x,
+                    ./images/team/img_mykola.jpg   1x,
                     ./images/team/img_mykola2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/img_mykola.jpg 1x,
+                    ./images/team/tablet/img_mykola.jpg   1x,
                     ./images/team/tablet/img_mykola2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mob/img_mykola.jpg 1x,
+                    ./images/team/mob/img_mykola.jpg   1x,
                     ./images/team/mob/img_mykola2x.jpg 2x
                   "
                   media="(min-width: 480px)"
@@ -383,21 +449,21 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/img_mikhajlo.jpg 1x,
+                    ./images/team/img_mikhajlo.jpg   1x,
                     ./images/team/img_mikhajlo2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/team/tablet/img_mikhajlo.jpg 1x,
+                    ./images/team/tablet/img_mikhajlo.jpg   1x,
                     ./images/team/tablet/img_mikhajlo2x.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/team/mob/img_mikhajlo.jpg 1x,
+                    ./images/team/mob/img_mikhajlo.jpg   1x,
                     ./images/team/mob/img_mikhajlo2x.jpg 2x
                   "
                   media="(min-width: 480px)"
@@ -654,5 +720,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
   </body>
 </html>

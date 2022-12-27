@@ -3,9 +3,37 @@
     fill: currentColor;
 }
 .hero__button {
-    min-width: 216px;
+    min-width: 200px;
     padding: 10px 30px;
     @extend %button;
+    @include desktop {
+        min-width: 216px;
+    }
+}
+
+.menu-button {
+    display: flex;
+        align-items: center;
+    
+    background-color: var(--main-background);
+    margin-left: auto;
+    border: transparent;
+
+    @include tab {
+        display: none;
+    }
+    
+}
+.menu-button-close {
+display: flex;
+    align-items: center;
+
+    background-color: var(--main-background);
+    margin-left: auto;
+    border: transparent;
+&:hover {
+fill: var(--accent-color);
+}
 }
 
 .foot__button {

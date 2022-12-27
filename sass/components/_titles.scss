@@ -6,15 +6,21 @@
 }
 .hero__title {
     color: var(--main-background);
-    width: 100%;
+     max-width: 360px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 
-    @include font(900, 44, 1.36, 0.06em);
+    @include font(900, 26, 1.36, 0.06em);
   
     text-transform: uppercase;
 
-    margin-bottom: 30px;
+    
+
+    @include desktop {
+        @include font(900, 44, 1.36, 0.06em);
+        max-width: 696px;
+    }
 }
 .section-title {
     margin-bottom: 50px;
@@ -43,8 +49,12 @@
 }
 
 .modal__title {
-    @include font(700, 20, 1.15, null);
+    @include font(700, 20, 1.5, null);
     text-align: center;
     color: var(--second-color);
     margin-bottom: 12px;
+
+    @include desktop {
+        @include font(700, 20, 1.15, null);
+    }
 }

@@ -1,5 +1,5 @@
 .page-header {
-    
+    position: relative;
     border-bottom: 1px solid var(--line-header);
 }
 
@@ -12,13 +12,23 @@
     align-items: center;
 }
 
+
 .page-header__cont {
-    height: 80px;
+    height: 60px;
+
+    @include desktop {
+        height: 80px;
+    }
 }
 
 
 .site-nav {
+    
     display: none;
+
+    @include tab {
+        display: flex;
+    }
 }
 
 .site-nav__link {
@@ -90,4 +100,78 @@
 .contakts .cont-link:focus {
     color: var(--accent-color);
 }
+
+// .menu-button__icon-cross {
+//     display: none;
+// }
+
+// .menu-button.is-open .menu-button__icon-cross {
+//     display: block;
+// }
+
+// .menu-button.is-open .menu-button__icon-menu {
+//     display: none;
+// }
+
+.menu-button:hover, 
+
+.mobile-menu {
+            
+    position: fixed;
+    background-color: var(--main-background);
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 150vw;
+   padding-left: 40px;
+    @include tab {
+        display: none;
+    }    
+    
+}
+
+
+
+.mobile-page-header__nav {
+    margin-bottom: 306px;
+}
+
+.mobile-site-nav {
+   
+}
+
+
+.mobile-site-nav__item:not(last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile-site-nav__link {
+    color: var(--second-color);
+    
+        @include font(500, 40, 1.17, 00.02em);
+        @extend %mainAnime;
+}
+
+.mobile-site-nav__link.current {
+    color: var(--accent-color);
+}
+
+
+
+.mobile-auth-nav__item:not(last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile-num-link {
+    @include font(500, 34, 1.17, 00.02em);
+    color: var(--accent-color);
+    
+}
+.mobile-email-link {
+    @include font(500, 24, 1.17, 00.02em);
+    color: var(--brand-color);
+
+}
+
+
 

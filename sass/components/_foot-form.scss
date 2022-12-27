@@ -36,7 +36,7 @@
    
     height: 50px;
 
-    // padding-left: 60px;
+    padding-left: 60px;
 
     background-color: inherit;
     border-radius: 4px;
@@ -46,11 +46,12 @@
 
     @include tab {
      width: 450px;
+    
     }
 
     @include desktop {
         width: 358px;
-        padding-left: 60px;
+        
     }
 
     
