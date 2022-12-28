@@ -31,7 +31,7 @@ display: flex;
     background-color: var(--main-background);
     margin-left: auto;
     border: transparent;
-&:hover {
+&:hover, :focus {
 fill: var(--accent-color);
 }
 }

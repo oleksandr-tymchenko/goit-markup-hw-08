@@ -16,7 +16,7 @@
 .page-header__cont {
     height: 60px;
 
-    @include desktop {
+    @include tab {
         height: 80px;
     }
 }
@@ -78,12 +78,31 @@
     display: none;
     margin-left: auto;
     justify-content: center;
+    
 
-    gap: 10;
+    @include tab {
+        display: block;
+       
+        
+    }
+    @include desktop {
+        display: flex;
+        
+    }
+
+    
 }
 
-.auth-nav .auth-nav__item+.auth-nav__item {
-    margin-left: 30px;
+.auth-nav__item+.auth-nav__item {
+    @include tab {
+        margin-top: 10px;
+    }
+
+   @include desktop {
+margin-left: 30px;
+margin-top: 0;
+   }
+   
 }
 
 .cont-link__icon {
@@ -113,7 +132,6 @@
 //     display: none;
 // }
 
-.menu-button:hover, 
 
 .mobile-menu {
             
@@ -122,8 +140,9 @@
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 150vw;
+    height: 100%;
    padding-left: 40px;
+   
     @include tab {
         display: none;
     }    
@@ -132,42 +151,44 @@
 
 
 
-.mobile-page-header__nav {
+.menu-page-header__nav {
     margin-bottom: 306px;
 }
 
-.mobile-site-nav {
+.menu-site-nav {
    
 }
 
 
-.mobile-site-nav__item:not(last-child) {
+.menu-site-nav__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.mobile-site-nav__link {
+.menu-site-nav__link {
     color: var(--second-color);
     
         @include font(500, 40, 1.17, 00.02em);
         @extend %mainAnime;
 }
 
-.mobile-site-nav__link.current {
+.menu-site-nav__link.current {
     color: var(--accent-color);
 }
 
+.menu-auth-nav {
+    margin-bottom: 64px;
+}
 
-
-.mobile-auth-nav__item:not(last-child) {
+.menu-auth-nav__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
-.mobile-num-link {
+.menu-num-link {
     @include font(500, 34, 1.17, 00.02em);
     color: var(--accent-color);
     
 }
-.mobile-email-link {
+.menu-email-link {
     @include font(500, 24, 1.17, 00.02em);
     color: var(--brand-color);
 

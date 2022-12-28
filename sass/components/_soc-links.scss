@@ -40,3 +40,12 @@
 .soc-links__icon {
     fill: currentColor;
 }
+
+.menu-soc-links {
+    display: flex;
+    gap: 20px;
+}
+.menu-soc-links__link {
+    @include font(500, 18, 1.22, 000.02em);
+    color: var(--accent-color);
+}

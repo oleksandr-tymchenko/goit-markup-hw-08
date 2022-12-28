@@ -5,7 +5,7 @@
 /* Сірий фон #2F303A; */
 /* Акцент #2196F3 */
 /* Фон додатковий #F5F4FA; */
- :root {
+ /* :root {
   --brand-color: #757575;
   --second-color: #212121;
   --main-background: #ffffff;
@@ -24,10 +24,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
+} */
 
 /* -----Utilit classes---- */
-.list {
+/* .list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -50,10 +50,10 @@ ul {
   margin: 0;
   padding-left: 0;
 }  */
-img {
+/* img {
   display: block;
 } */
-.title {
+/* .title {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -96,16 +96,16 @@ img {
 }
 .button-icon {
   fill: currentColor;
-}
+}  */
 
 /*-------outline и beckground убрать--------*/
 
 
 
 /* -----------------header ----------*/
-.page-header {
+/* .page-header {
   border-bottom: 1px solid var(--line-header);
-}
+} */
 
 
 /* // .page-header__cont,
@@ -116,16 +116,16 @@ img {
 //     align-items: center;
 // } */
 
-.page-header__cont {
+/* .page-header__cont {
   height: 80px;
-}
+} */
 
 
 /* // .site-nav {
 //     display: flex;
 // } */
 
-.site-nav__link {
+/* .site-nav__link {
   position: relative;
 
   display: block;
@@ -192,7 +192,7 @@ img {
 .cont-link:hover,
 .contakts .cont-link:focus {
   color: var(--accent-color);
-}
+} */
 
 
 
