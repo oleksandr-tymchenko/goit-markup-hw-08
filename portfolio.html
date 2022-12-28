@@ -29,10 +29,10 @@
 
     <header class="page-header">
       <div class="container page-header__cont">
+        <a href="" class="logo link"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
         <nav class="page-header__nav">
-          <a href="" class="logo link"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link">Студія</a>
@@ -65,6 +65,83 @@
             >
           </li>
         </ul>
+        <button data-menu-open type="button" class="menu-button">
+          <svg width="40" height="40" class="menu-button__icon">
+            <use
+              class="menu-button__icon-menu"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+            <!-- <use
+              class="menu-button__icon-cross"
+              href="./images/icons.svg#icon-cross"
+            ></use> -->
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobail menu -->
+
+      <div data-menu class="mobile-menu mobile-menu--is-hidden">
+        <div class="mobile-menu-nav container">
+          <button data-menu-close type="button" class="menu-button-close">
+            <svg width="40" height="40" class="menu-button__icon">
+              <use
+                class="menu-button__icon-cross"
+                href="./images/icons.svg#icon-cross"
+              ></use>
+            </svg>
+          </button>
+          <nav class="menu-page-header__nav">
+            <ul class="menu-site-nav list">
+              <li class="menu-site-nav__item">
+                <a href="./index.html" class="menu-site-nav__link link"
+                  >Студія</a
+                >
+              </li>
+              <li class="menu-site-nav__item">
+                <a
+                  href="./portfolio.html"
+                  class="menu-site-nav__link current link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="menu-site-nav__item">
+                <a href="" class="menu-site-nav__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="menu-auth-nav list">
+              <li class="menu-auth-nav__item">
+                <a href="tel:+380961111111" class="menu-num-link link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-auth-nav__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-email-link link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-soc-links list">
+              <li class="menu-soc-links__item">
+                <a class="menu-soc-links__link link" href="#">Instagram </a>
+              </li>
+              <li class="menu-soc-links__item">
+                <a class="menu-soc-links__link link" href="#">Twitter</a>
+              </li>
+              <li class="menu-soc-links__item">
+                <a class="menu-soc-links__link link" href="#">Facebook</a>
+              </li>
+              <li class="menu-soc-links__item">
+                <a class="menu-soc-links__link link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -81,24 +158,16 @@
               <button type="button" class="filter__button">Усі</button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">
-                Веб-сайти
-              </button>
+              <button type="button" class="filter__button">Веб-сайти</button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">
-                Додатки
-              </button>
+              <button type="button" class="filter__button">Додатки</button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">
-                Дизайн
-              </button>
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
             <li class="item">
-              <button type="button" class="filter__button">
-                Маркетинг
-              </button>
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
 
@@ -106,11 +175,29 @@
             <li class="ptf__item">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.techn-min.jpg"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/tech/img-tech-min.jpg 1x,
+                    ./images/porfolio/tech/img-tech2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/tech/img-tech-tab-min.jpg 1x,
+                    ./images/porfolio/tech/img-tech-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/tech/img-tech-mob-min.jpg 1x,
+                    ./images/porfolio/tech/img-tech-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/tech/img-tech-min.jpg"
                     alt="Зображення співробітників у моніторі"
-                    width="370"
+                    width="100%"
                   />
+                  </picture>
+                  
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -131,11 +218,28 @@
             <li class="ptf__item">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.poster-min.jpg"
-                    alt="2 баскетболіста з м'ячем"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/poster/img-poster-min.jpg 1x,
+                    ./images/porfolio/poster/img-poster2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/poster/img-poster-tab-min.jpg 1x,
+                    ./images/porfolio/poster/img-poster-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/poster/img-poster-mob-min.jpg 1x,
+                    ./images/porfolio/poster/img-poster-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/poster/img-poster-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -156,11 +260,28 @@
             <li class="ptf__item">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.seafood-min.jpg"
-                    alt="Назва ресторану на фоні риби"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/seafood/img-seafood-min.jpg 1x,
+                    ./images/porfolio/seafood/img-seafood2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/seafood/img-seafood-tab-min.jpg 1x,
+                    ./images/porfolio/seafood/img-seafood-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/seafood/img-seafood-mob-min.jpg 1x,
+                    ./images/porfolio/seafood/img-seafood-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/seafood/img-seafood-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -181,11 +302,28 @@
             <li class="ptf__item">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.prime-min.jpg"
-                    alt="навушники"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/prime/img-prime-min.jpg 1x,
+                    ./images/porfolio/prime/img-prime2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/prime/img-prime-tab-min.jpg 1x,
+                    ./images/porfolio/prime/img-prime-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/prime/img-prime-mob-min.jpg 1x,
+                    ./images/porfolio/prime/img-prime-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/prime/img-prime-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -206,11 +344,28 @@
             <li class="ptf__item">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.boxes-min.jpg"
-                    alt="2 коробки"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/boxes/img-boxes-min.jpg 1x,
+                    ./images/porfolio/boxes/img-boxes2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/boxes/img-boxes-tab-min.jpg 1x,
+                    ./images/porfolio/boxes/img-boxes-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/boxes/img-boxes-mob-min.jpg 1x,
+                    ./images/porfolio/boxes/img-boxes-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/boxes/img-boxes-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -231,11 +386,28 @@
             <li class="ptf__item">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.inspiration-min.jpg"
-                    alt="Монітор комп'ютера із зображенням мапи світу"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/insp/img-insp-min.jpg 1x,
+                    ./images/porfolio/insp/img-insp2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/insp/img-insp-tab-min.jpg 1x,
+                    ./images/porfolio/insp/img-insp-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/insp/img-insp-mob-min.jpg 1x,
+                    ./images/porfolio/insp/img-insp-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/insp/img-insp-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -256,11 +428,28 @@
             <li class="ptf__item ptf__item--last-line">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.limited-min.jpg"
-                    alt="розгорнута книга"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/limit/img-limit-min.jpg 1x,
+                    ./images/porfolio/limit/img-limit2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/limit/img-limit-tab-min.jpg 1x,
+                    ./images/porfolio/limit/img-limit-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/limit/img-limit-mob-min.jpg 1x,
+                    ./images/porfolio/limit/img-limit-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/limit/img-limit-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -281,11 +470,28 @@
             <li class="ptf__item ptf__item--last-line">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.lab-min.jpg"
-                    alt="Етикетка з надписом LAB EL TAG"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/lab/img-lab-min.jpg 1x,
+                    ./images/porfolio/lab/img-lab2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/lab/img-lab-tab-min.jpg 1x,
+                    ./images/porfolio/lab/img-lab-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/lab/img-lab-mob-min.jpg 1x,
+                    ./images/porfolio/lab/img-lab-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/lab/img-lab-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -306,11 +512,28 @@
             <li class="ptf__item ptf__item--last-line">
               <a href="" class="link product-card">
                 <div class="product-card__thumb">
-                  <img
-                    src="./images/porfolio/img.growing-min.jpg"
-                    alt="Руки, які печатають на клавіатурі ноутбука"
-                    width="370"
+                  <picture>
+                    <source
+                    srcset="./images/porfolio/grow/img-grow-min.jpg 1x,
+                    ./images/porfolio/grow/img-grow2x-min.jpg 2x"
+                    media="(min-width: 1200px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/grow/img-grow-tab-min.jpg 1x,
+                    ./images/porfolio/grow/img-grow-tab2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <source
+                    srcset="./images/porfolio/grow/img-grow-mob-min.jpg 1x,
+                    ./images/porfolio/grow/img-grow-mob2x-min.jpg 2x"
+                    media="(min-width: 768px)"
+                    >
+                    <img
+                    src="./images/porfolio/grow/img-grow-min.jpg"
+                    alt="Зображення співробітників у моніторі"
+                    width="100%"
                   />
+                  </picture>
                   <div class="product-card__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -418,5 +641,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // margin: -15px;
     gap: 30px;
     
     line-height: 1.7;
@@ -12,21 +11,18 @@
     width: 100%;
 
 
-    @media screen and (min-width: 480px) {
+    @include mob {
         width: 450px;
-
-    }
-
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 30px) / 2);
-
-    }
-        @media screen and (min-width: 1200px) {
-            width: calc((100% - 90px) / 4);
+     }
     
-        }
-
-    // margin: 15px;
+    @include tab {
+        width: calc((100% - 30px) / 2);
+    }
+    
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
+    
 }
 
 .benefits__icons {

@@ -1,9 +1,16 @@
+
+
 .filter {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 50px;
     margin-left: auto;
-    justify-content: center;
+    justify-content: start;
     gap: 8px;
+
+    @include tab {
+      justify-content: center;
+    }
 }
 
 /* -----------cards------------- */
@@ -11,172 +18,27 @@
 .ptf {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    gap: 30px;
 }
 
 .ptf__item {
-    margin-top: 30px;
-    margin-left: 30px;
-
+    
     @extend %mainAnime;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     &:hover {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+  width: 100%;
+
+  @include mob {
+    width: 450px;
+  }
+  @include tab {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 

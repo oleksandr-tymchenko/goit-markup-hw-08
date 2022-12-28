@@ -32,9 +32,9 @@
         max-width: 100%;
         height: 600px;
         padding-top: 200px;
-            padding-bottom: 200px;
+        padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/Hero.jpg);
+            url(../../images/Hero.jpg);
         
             @include retina {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),

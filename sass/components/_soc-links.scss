@@ -43,7 +43,13 @@
 
 .menu-soc-links {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.menu-soc-links__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu-soc-links__link {
     @include font(500, 18, 1.22, 000.02em);

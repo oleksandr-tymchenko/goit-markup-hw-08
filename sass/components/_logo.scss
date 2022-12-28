@@ -1,11 +1,16 @@
 .logo {
    display: block;
-    margin-right: 93px;
+    margin-right: 88px;
 
     color: var(--head-logo);
     
-    @include font(700, 26, 1.2, null);
+    @include font(700, 23, 1.17, null);
       font-family: 'Raleway', sans-serif;
+
+    @include desktop {
+        margin-right: 93px;
+        @include font(700, 26, 1.2, null);
+    }
 }
 
 .logo--accent {
