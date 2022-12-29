@@ -85,15 +85,15 @@
 
       <div data-menu class="mobile-menu mobile-menu--is-hidden">
         <div class="mobile-menu-nav container">
-          <button data-menu-close type="button" class="menu-button-close">
-            <svg width="40" height="40" class="menu-button__icon">
-              <use
-                class="menu-button__icon-cross"
-                href="./images/icons.svg#icon-cross"
-              ></use>
-            </svg>
-          </button>
           <nav class="menu-page-header__nav">
+            <button data-menu-close type="button" class="menu-button-close">
+              <svg width="40" height="40" class="menu-button__icon">
+                <use
+                  class="menu-button__icon-cross"
+                  href="./images/icons.svg#icon-cross"
+                ></use>
+              </svg>
+            </button>
             <ul class="menu-site-nav list">
               <li class="menu-site-nav__item">
                 <a href="./index.html" class="menu-site-nav__link current link"
@@ -110,6 +110,7 @@
               </li>
             </ul>
           </nav>
+
           <div>
             <ul class="menu-auth-nav list">
               <li class="menu-auth-nav__item">
@@ -267,6 +268,7 @@
       </section>
 
       <!------------Блок наша команда-------------------->
+
       <section class="section section__team">
         <div class="container">
           <h2 class="team__header section-title">Наша команда</h2>
@@ -279,27 +281,26 @@
                     ./images/team/img_igor.jpg   1x,
                     ./images/team/img_igor2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  media="(min-width:1200px)"
                 />
                 <source
                   srcset="
                     ./images/team/tablet/img_igor.jpg   1x,
                     ./images/team/tablet/img_igor2x.jpg 2x
                   "
-                  media="(min-width: 768px)"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="
                     ./images/team/mob/img_igor.jpg   1x,
                     ./images/team/mob/img_igor2x.jpg 2x
                   "
-                  media="(min-width: 480px)"
+                  media="(min-width:480px)"
                 />
-
                 <img
                   src="./images/team/img_igor.jpg"
                   alt="Фото співробітника"
-                  width="100%"
+                  width="270"
                 />
               </picture>
 

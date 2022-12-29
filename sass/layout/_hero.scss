@@ -10,21 +10,21 @@
     padding-bottom: 118px;
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-     url(../../images/Hero-mob.jpg);
+     url(../images/Hero-mob.jpg);
 
     @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/Hero-mob2x.jpg);
+            url(../images/Hero-mob2x.jpg);
     }
 
     @include tab {
         max-width: 768px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../../images/Hero-tab.jpg);
+                url(../images/Hero-tab.jpg);
         
             @include retina {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../../images/Hero-tab2x.jpg);
+                    url(../images/Hero-tab2x.jpg);
             }
     }
 
@@ -34,11 +34,11 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/Hero.jpg);
+            url(../images/Hero.jpg);
         
             @include retina {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../../images/Hero2x.jpg);
+                    url(../images/Hero2x.jpg);
             }
     }
 
